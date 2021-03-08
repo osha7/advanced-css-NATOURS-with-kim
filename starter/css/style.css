@@ -1,4 +1,22 @@
 /*
+
+0 - 600 Phone  
+600-900 Tablet Portrait
+900-1200 Tablet landscape
+1200-1800 is where our normal styles apply
+1800+ Big Desktop
+
+*/
+/*
+
+$breakpoint argument choices
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+*/
+/*
 COLORS:
 
 Light green: #7ed56f
@@ -51,6 +69,15 @@ html {
   /* font-size: 10px; */
   /* default browser font size is 16px (100%) */
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 /* now ^^ 1 rem = 10px */
 /* rem is based on root size - html is root */

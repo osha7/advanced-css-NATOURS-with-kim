@@ -7,16 +7,38 @@
 }
 
 html {
-    
     /* font-size: 10px; */
     /* default browser font size is 16px (100%) */
-    font-size: 62.5%;
-    // ^^ not typography bc it declares what 1 rem is 
+    font-size: 62.5%; // 1rem = 10px
+    // ^^ not typography bc it declares what 1 rem is
+
+    // @media (max-width: 600px) {
+    //     font-size: 50%;
+    // }
+    // @include respond-phone {
+    //     font-size: 50%;
+    // }
+
+    @include respond(tab-land) {
+        font-size: 56.25%; // 1rem = 9px; 9/16
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%; // 1rem = 8px; 8/16
+    }
+
+    // @include respond(phone) {
+    //     font-size: 30%; // 1rem = 4.88px; 8/16
+    // }
+
+    @include respond(big-desktop) {
+        font-size: 75%; // 1 rem = 12px ; 12/16
+    }
 }
-/* now ^^ 1 rem = 10px */ 
+/* now ^^ 1 rem = 10px */
 /* rem is based on root size - html is root */
 
 body {
-    box-sizing: border-box; 
+    box-sizing: border-box;
     /* ^^ height and width includes padding, borders & specified height or width */
 }
