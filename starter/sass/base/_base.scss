@@ -41,4 +41,8 @@ html {
 body {
     box-sizing: border-box;
     /* ^^ height and width includes padding, borders & specified height or width */
+    padding: 3rem;
+    @include respond(tab-port) {
+        padding: 0;
+    }
 }

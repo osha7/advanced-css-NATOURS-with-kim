@@ -39,6 +39,9 @@ $breakpoint argument choices
 -tab-land
 -big-desktop
 
+// order: base + typeography + general layout
+
+
 */
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
